@@ -1,155 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shopify</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg  bg-primary"  >
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                              <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                  </li>
-              </ul>
-              <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-          </div>
-      </div>
-  </nav>>
+<head>
+    <meta cha₹et="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoMoco | Products</title>
+    <link rel="shortcut icon" href="/assets/chocologo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-
-  
-   <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
-            </div>
-        </div>
+    <div class="cursor">
     </div>
-      <div class="col">
 
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
-            </div>
+    <div id="main">
+        <div id="notify">
+            <p>Product added to cart</p>
         </div>
 
-    </div>
-      <div class="col">
+        <nav>
+            <div class="logo">
+                <img src="/assets/chocomocoLogo.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><input type="text">
+                    <img src="" alt="search icon">
+                </li>
+            </ul>
+            <div id="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>0</p>
+            </div>
+        </nav>
 
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
+        <div id="products">
+            <div id="a" class="product">
+                <div class="product-image">
+                    <img src="/assets/JimmyAssortedCocktailMixerPack.avif" alt="product">
+                </div>
+                <div class="product-desc">
+                    <h3>Milk Bar Family</h3>
+                    <p>₹799.00</p>
+                    
+                    <div class="add-to-cart">
+                        <div class="change-quantity">
+                            <button class="decrease">-</button>
+                            <input type="text" value="1">
+                            <button class="increase">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="b" class="product">
+                <div class="product-image">
+                    <img src="/assets/JimmyAssortedCocktailMixerPacke.avif" alt="product">
+                </div>
+                <div class="product-desc">
+                    <h3>Kit Kat Mini</h3>
+                    <p>₹110.00</p>
+                    
+                    <div class="add-to-cart">
+                        <div class="change-quantity">
+                            <button class="decrease">-</button>
+                            <input type="text" value="1">
+                            <button class="increase">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="c" class="product">
+                <div class="product-image">
+                    <img src="/assets/JimmyAssortedCocktailMixerPackw.avif" alt="product">
+                </div>
+                <div class="product-desc">
+                    <h3>Ferrero Rocher</h3>
+                    <p>₹999.00</p>
+                    
+                    <div class="add-to-cart">
+                        <div class="change-quantity">
+                            <button class="decrease">-</button>
+                            <input type="text" value="1">
+                            <button class="increase">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="d" class="product">
+                <div class="product-image">
+                    <img src="/images/chocolate-4.jpg" alt="product">
+                </div>
+                <div class="product-desc">
+                    <h3>Pure Chocolate</h3>
+                    <p>₹899.00</p>
+                    
+                    <div class="add-to-cart">
+                        <div class="change-quantity">
+                            <button class="decrease">-</button>
+                            <input type="text" value="1">
+                            <button class="increase">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="e" class="product">
+                <div class="product-image">
+                    <img src="/images/chocolate-5.jpg" alt="product">
+                </div>
+                <div class="product-desc">
+                    <h3>Easter Miester</h3>
+                    <p>₹899.00</p>
+                    
+                    <div class="add-to-cart">
+                        <div class="change-quantity">
+                            <button class="decrease">-</button>
+                            <input type="text" value="1">
+                            <button class="increase">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="e" class="product">
+                <div class="product-image">
+                    <img src="/images/chocolate-6.jpg" alt="product">
+                </div>
+                <div class="product-desc">
+                    <h3>Paul and Mike</h3>
+                    <p>₹799.00</p>
+                    
+                    <div class="add-to-cart">
+                        <div class="change-quantity">
+                            <button class="decrease">-</button>
+                            <input type="text" value="1">
+                            <button class="increase">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+
+    <div class="cart-container">
+        <div class="products-container">
+            <div class="title">
+                <h1>Cart</h1>
+                <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="product-container">
+                <div class="cart-product">
+                    <h3>Cadbury DairyMilk</h3>
+                    <p>2</p>
+                    <p>₹799.00</p>
+                    <button class="remove-from-cart" data-productid=""><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="checkout">
+                <h3>Total: ₹799.00</h3>
+                <button id="checkout-btn">Checkout</button>
             </div>
         </div>
 
+        <div class="overlay"></div>
     </div>
-      <div class="col">
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
-            </div>
-        </div>
-    </div>
-      <div class="col">
 
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
-            </div>
-        </div>
 
-    </div>
-      <div class="col">
-
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
-            </div>
-        </div>
-
-    </div>
-      <div class="col">
-        <div class="card" style="width: 14rem;">
-            <img src="https://drinkjimmys.com/cdn/shop/files/JimmyAssortedCocktailMixerPack-1.webp?v=1693481883&width=720" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
-                <a href="#" class="btn btn-primary" data-id="1" onclick="addItem(event)" >Add to cart</a>
-            </div>
-        </div>
-    </div>
-    </div>
-   </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://kit.fontawesome.com/1dd0c8a742.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
 </html>
